@@ -13,7 +13,7 @@ public class Javaregex {
     }
     public static void main(String[] args) {
 
-        String str="602255";
+        String str="802255";
         String regex="^[1-9][0-9]{5}$\n";
 
         if(check_regex(regex,str))
