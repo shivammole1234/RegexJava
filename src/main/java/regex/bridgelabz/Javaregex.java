@@ -13,7 +13,7 @@ public class Javaregex {
     }
     public static void main(String[] args) {
 
-        String regex="^abc@bridgelabz$\n";
+        String regex="^abc@bridgelabz\\.co$\n";
         String str="abc@bridgelabz.co";
 
         if(check_regex(regex,str))
