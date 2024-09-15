@@ -13,13 +13,13 @@ public class Javaregex {
     }
     public static void main(String[] args) {
 
-        String str="802255";
-        String regex="^[1-9][0-9]{2}\\s?[0-9]{3}$";
+        String regex="^abc@[a-zA-Z0-9.-]+\\.co$";
+        String str="abc@bridgelabz.co";
 
         if(check_regex(regex,str))
-            System.out.println("the string :- "+str+" match with the regex:-  "+regex);
+            System.out.println("the email :- "+str+" match with the regex:-  "+regex);
         else
-            System.out.println("the string :- "+str+" does not match with the regex:-  "+regex);
+            System.out.println("the email :- "+str+" does not match with the regex:-  "+regex);
 
 
     }
