@@ -13,13 +13,13 @@ public class Javaregex {
     }
     public static void main(String[] args) {
 
-        String str="652255";
+        String str="602255";
         String regex="^[1-9][0-9]{5}$\n";
 
         if(check_regex(regex,str))
             System.out.println("the string :- "+str+" match with the regex:-  "+regex);
         else
-            System.out.println("the string :- "+str+" match with the regex:-  "+regex);
+            System.out.println("the string :- "+str+" does not match with the regex:-  "+regex);
 
 
     }
