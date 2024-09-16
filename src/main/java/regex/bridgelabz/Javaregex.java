@@ -13,8 +13,9 @@ public class Javaregex {
     }
     public static void main(String[] args) {
 
-        String regex="^abc(\\.[a-zA-Z0-9_+.-]+)?@bridgelabz\\.co(\\.in)?$\n";
-        String str="abc@bridgelabz.co";
+        String regex="^[a-z]{3}([_+\\-.][a-z]+)?@[a-z]{10}\\.[a-z]{2}.*$";
+
+        String str="abc.xyz@bridgelabz.co.in";
 
         if(check_regex(regex,str))
             System.out.println("the email :- "+str+" match with the regex:-  "+regex);
