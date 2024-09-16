@@ -9,8 +9,7 @@ public class Javaregex {
         Pattern pattern = Pattern.compile(regex);
 
         Matcher matcher=pattern.matcher(str);
-        System.out.println("sample branch");
-        System.out.println("sample branch");
+
 
 
         return matcher.matches();
@@ -18,9 +17,9 @@ public class Javaregex {
     }
     public static void main(String[] args) {
 
-        String regex="^abc(\\.[a-zA-Z0-9_+.-]+)?@bridgelabz\\.co(\\.[a-zA-Z]{2})?$\n";
-        String str="abc.xyz@bridgelabz.co.au";
-
+        String regex="^[a-z]{3}.*$";
+        String str="abc.xyz@bridgelabz.co.in";
+        System.out.println(check_regex(regex,str));
         if(check_regex(regex,str))
             System.out.println("the email :- "+str+" match with the regex:-  "+regex);
         else
