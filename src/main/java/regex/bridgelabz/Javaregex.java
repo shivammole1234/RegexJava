@@ -17,7 +17,7 @@ public class Javaregex {
         String str="abc@bridgelabz.co";
 
         if(check_regex(regex,str))
-            System.out.println("the email :- "+str+" match with the regex:-  "+regex);
+            System.out.println("the email:- "+str+" match with the regex:-  "+regex);
         else
             System.out.println("the email :- "+str+" does not match with the regex:-  "+regex);
 
